@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang=en>
+	<head>
+		<meta charset=utf-8>
+		<title>5.3</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-inverse">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		    	<span class="navspan"></span>
+		      		    <a href="#" class="navbar-left"><img src="http://via.placeholder.com/50x50"></a>
+		    </div>
+
+				<div class="collapse navbar-collapse" id="myNavbar">
+			    <ul class="nav navbar-nav">
+			        <li><a href="#">Link 1</a></li>
+			        <li><a href="#">Link 2</a></li>
+			    	<li><a href="#">Link 3</a></li>
+		    	</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="col-m-12 container">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"></li>
+			</ol>
+			<div class="carousel-inner" role="listbox">
+			  <div class="item carousel_img"><img class="carousel_img" src="https://images.pexels.com/photos/1047920/pexels-photo-1047920.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+			  </div>
+			  <div class="item carousel_img"><img class="carousel_img" src="https://images.pexels.com/photos/1261154/pexels-photo-1261154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+			  </div>
+			  <div class="item active carousel_img"><img class="carousel_img" src="https://images.pexels.com/photos/707049/pexels-photo-707049.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+			  </div>
+			  <div class="item carousel_img"><img class="carousel_img" src="https://images.pexels.com/photos/1267688/pexels-photo-1267688.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+			  </div>
+			  <div class="item carousel_img"><img class="carousel_img" src="https://images.pexels.com/photos/1076339/pexels-photo-1076339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+			  </div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			  <span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			  <span class="sr-only">Next</span>
+			</a>
+		</div>
+		</div>
+		
+		
+		<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#tabmain">Main</a></li>
+  <li><a data-toggle="tab" href="#tabnews">News</a></li>
+  <li><a data-toggle="tab" href="#tabcontact">Contact</a></li>
+  <li><a data-toggle="tab" href="#tababout">About</a></li>
+</ul>
+
+<div class="tab-content">
+  <div id="tabmain" class="tab-pane fade in active">
+    <h3>Main</h3>
+    <p>Duis purus sapien, tempor vel vulputate a, lobortis ut elit. Vestibulum mattis eleifend hendrerit. Curabitur facilisis erat odio, nec efficitur nulla eleifend id.</p>
+  </div>
+  <div id="tabnews" class="tab-pane fade">
+    <h3>News</h3>
+    <p>Integer faucibus sem at elit posuere, quis euismod nibh iaculis. In vehicula, ex ac consectetur gravida, est leo ultricies quam, sed lobortis mauris libero vitae risus. Morbi porta tempus dolor, vitae pretium magna ultrices.</p>
+  </div>
+  <div id="tabcontact" class="tab-pane fade">
+    <h3>Contact</h3>
+    <p>Sed odio dui, lobortis quis enim et, imperdiet ullamcorper nibh. Morbi vel neque quis odio varius fermentum id et nisl. Suspendisse potenti.</p>
+  </div>
+  <div id="tababout" class="tab-pane fade">
+    <h3>About</h3>
+    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi quis consectetur orci. Ut vitae tristique metus. Ut imperdiet lobortis neque, id lobortis nisi cursus eget.</p>
+  </div>
+		
+		
+		<div class= "modal_container">
+		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Informations</button>
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">About site & author</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse felis lorem, accumsan id mollis et, condimentum nec libero. Cras ligula justo, congue in euismod a, condimentum nec ante. In hac habitasse platea dictumst. Pellentesque vestibulum mollis tempus. Cras a sollicitudin leo. Fusce porta metus non dolor fringilla hendrerit. Suspendisse quam libero, tempus et tempus id, tincidunt eu justo. Mauris vel porta lorem. Morbi ex sapien, congue quis lacus at, lacinia suscipit lectus. Nunc luctus, ante at tincidunt posuere, justo libero consequat tortor, elementum aliquam justo risus quis metus. Duis ullamcorper blandit nisi, quis fringilla justo vehicula eu. Quisque sit amet tempus augue, vitae consequat ligula. Quisque porta, dui vitae cursus feugiat, dui felis faucibus turpis, id dictum justo ante sed nibh.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </div>
